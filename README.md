@@ -95,4 +95,12 @@ echo "const typeDefinitions =  \`
     hello: string! 
   }\`" > src/schema.ts 
 
+echo " 
+  
+const resolvers = {
+  Query: {
+    hello: () => 'Hello World!'
+  }
+}" >> src/schema.ts 
+
 ```
