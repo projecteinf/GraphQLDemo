@@ -1,9 +1,12 @@
 import { makeExecutableSchema } from '@graphql-tools/schema';
 
 const typeDefinitions =  `
+
+
   type Query {
     users: [User!]!
     user(id: ID!): User
+    hello: String
   }
   
   type Mutation {
@@ -19,7 +22,7 @@ const typeDefinitions =  `
   
 const resolvers = {
   Query: {
-    users: () => 'Hello World!'
+    hello: () => 'Hello World!'
   }
 }
 
