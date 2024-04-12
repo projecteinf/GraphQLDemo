@@ -79,5 +79,9 @@ npx tsc --init
 Per a executar el projecte, executarem la següent comanda:
 
 ```bash
-node index.js
+npm run dev # Actualització automàtica
+```
+
+```bash
+npm run start # Sense actualització automàtica
 ```
