@@ -1,4 +1,6 @@
-# GraphQLDemo
+# Tutorial seguit
+
+[Creating Node.js & TypeScript Project](https://the-guild.dev/graphql/yoga-server/tutorial/basic/01-project-setup)
 
 # Instal·lació software necessari
 
@@ -54,9 +56,6 @@ Per a poder utilitzar un servidor GraphQL, necessitarem instal·lar la llibreria
 npm install graphql-yoga
 ```
 
-# Tutorial seguit
-
-[Creating Node.js & TypeScript Project](https://the-guild.dev/graphql/yoga-server/tutorial/basic/01-project-setup)
 
 # Inicialització del projecte
 
