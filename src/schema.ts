@@ -1,22 +1,17 @@
 import { makeExecutableSchema } from '@graphql-tools/schema';
 
 const typeDefinitions =  `
-
-
   type Query {
-    users: [User!]!
-    user(id: ID!): User
+    info: String!
+    feed: [Link!]!
     hello: String
   }
   
-  type Mutation {
-    createUser(name: String!): User!
-  }
-  
-  type User {
+  type Link {
     id: ID!
-    name: String!
-  }  
+    description: String!
+    url: String!
+  } 
 `
 
   
