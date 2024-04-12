@@ -44,7 +44,7 @@ npm install npx
 Per a poder utilitzar GraphQL, necessitarem instal·lar la llibreria `graphql`. Per a fer-ho, executarem la següent comanda:
 
 ```bash
-npm install graphql
+npm install graphql 
 ```
 
 ## GraphQL Server 
@@ -86,10 +86,13 @@ npm run start # Sense actualització automàtica
 # Creating your First GraphQL Schema
 
 ```bash
+
 npm i @graphql-tools/schema graphql
+
 touch src/schema.ts
-echo "echo "const typeDefinitions =  
-  type Query { 
-    hello: String! 
-  }" > src/schema.ts 
+echo "const typeDefinitions =  \`
+  type Query: any { 
+    hello: string! 
+  }\`" > src/schema.ts 
+
 ```

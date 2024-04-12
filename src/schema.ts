@@ -1,4 +1,4 @@
-const typeDefinitions =  
-  type Query { 
-    hello: String! 
-  }
+const typeDefinitions =  `
+  type Query: any { 
+    hello: string! 
+  }`
