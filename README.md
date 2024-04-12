@@ -1,28 +1,3 @@
-# Tutorial de GraphQL
-
-[GraphQL for Beginners: Setting Up GraphQL Server - Part 1 - Introduction](https://lo-victoria.com/graphql-for-beginners-introduction)
-
-[GraphQL for Beginners: Setting Up GraphQL Server - Part 2 - Graphql for beginners subscriptions schemas and servers](https://lo-victoria.com/graphql-for-beginners-subscriptions-schemas-and-servers)
-
-[GraphQL for Beginners - Part 3 - Setting Up GraphQL Server](https://lo-victoria.com/graphql-for-beginners-setting-up-graphql-server)
-
-# Per a practicar
-
-[GQL API Playground](https://gql.hashnode.com/?source=legacy-api-page)
-
-Exemple de consulta de gql.hashnode.com:
-
-```graphql
-
-query {
-  user(username:"victoria"){ 
-    name
-    dateJoined
-  }
-}
-
-```
-
 # GraphQLDemo
 
 # Instal·lació software necessari
@@ -40,7 +15,7 @@ Si no tenim instal·lat Node.js (en un sistema Linux), executarem la següent co
 sudo apt install nodejs
 ```
 
-## npm
+## npm i npx
 Per a poder instal·lar les dependències del projecte, necessitarem tenir instal·lat npm. Per a comprovar si ja el tenim instal·lat, executarem la següent comanda:
 
 ```bash
@@ -51,6 +26,18 @@ Si no tenim instal·lat npm (en un sistema Linux), executarem la següent comand
 
 ```bash
 sudo apt install npm
+```
+
+Per a comprovar si tenim instal·lat `npx`, executarem la següent comanda:
+
+```bash
+npx -v
+```
+
+Per a poder utilitzar la comanda `npx`, necessitarem instal·lar la llibreria `npx`. Per a fer-ho, executarem la següent comanda:
+
+```bash
+npm install npx
 ```
 
 ## GraphQL (llengunatge de consulta - opcional)
