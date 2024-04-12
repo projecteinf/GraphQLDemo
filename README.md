@@ -72,8 +72,6 @@ Initialize a new TypeScript configuration
 npx tsc --init
 ```
 
-
-
 # Execució del projecte
 
 Per a executar el projecte, executarem la següent comanda:
@@ -84,4 +82,14 @@ npm run dev # Actualització automàtica
 
 ```bash
 npm run start # Sense actualització automàtica
+```
+# Creating your First GraphQL Schema
+
+```bash
+npm i @graphql-tools/schema graphql
+touch src/schema.ts
+echo "echo "const typeDefinitions =  
+  type Query { 
+    hello: String! 
+  }" > src/schema.ts 
 ```
