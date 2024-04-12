@@ -2,6 +2,8 @@
 
 [Creating Node.js & TypeScript Project](https://the-guild.dev/graphql/yoga-server/tutorial/basic/01-project-setup)
 
+[GraphQL official documentation](https://graphql.org/learn/)
+
 # Instal·lació software necessari
 
 ## Node.js
