@@ -53,7 +53,7 @@ npm install graphql
 Per a poder utilitzar un servidor GraphQL, necessitarem instal·lar la llibreria `graphql-yoga`. Per a fer-ho, executarem la següent comanda:
 
 ```bash
-npm install graphql-yoga
+npm i --save-exact graphql-yoga
 ```
 
 
