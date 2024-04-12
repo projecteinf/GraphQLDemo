@@ -90,17 +90,26 @@ npm run start # Sense actualització automàtica
 npm i @graphql-tools/schema graphql
 
 touch src/schema.ts
-echo "const typeDefinitions =  \`
+
+echo "import { makeExecutableSchema } from '@graphql-tools/schema';
+
+const typeDefinitions =  \`
   type Query: any { 
     hello: string! 
-  }\`" > src/schema.ts 
+  }\`
 
-echo " 
   
 const resolvers = {
   Query: {
     hello: () => 'Hello World!'
   }
-}" >> src/schema.ts 
+}
+
+export const schema = makeExecutableSchema({
+  resolvers: [resolvers],
+  typeDefs: [typeDefinitions]
+})
+
+" > src/schema.ts 
 
 ```
