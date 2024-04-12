@@ -54,6 +54,10 @@ Per a poder utilitzar un servidor GraphQL, necessitarem instal·lar la llibreria
 npm install graphql-yoga
 ```
 
+# Tutorial seguit
+
+[Creating Node.js & TypeScript Project](https://the-guild.dev/graphql/yoga-server/tutorial/basic/01-project-setup)
+
 # Inicialització del projecte
 
 Podem inicialitzar el projecte després d'instal·lar totes les dependències necessàries. Per a fer-ho, executarem la següent comanda:
@@ -61,6 +65,14 @@ Podem inicialitzar el projecte després d'instal·lar totes les dependències ne
 ```bash
 npm init -y
 ```
+
+Initialize a new TypeScript configuration
+
+```bash
+npx tsc --init
+```
+
+
 # Execució del projecte
 
 Per a executar el projecte, executarem la següent comanda:
