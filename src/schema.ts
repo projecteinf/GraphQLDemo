@@ -1,8 +1,8 @@
 import { makeExecutableSchema } from '@graphql-tools/schema';
 
 const typeDefinitions =  `
-  type Query: any { 
-    hello: string! 
+  type Query { 
+    hello: String! 
   }`
 
   
@@ -16,5 +16,3 @@ export const schema = makeExecutableSchema({
   resolvers: [resolvers],
   typeDefs: [typeDefinitions]
 })
-
-
