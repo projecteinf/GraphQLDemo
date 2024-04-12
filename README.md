@@ -94,7 +94,7 @@ touch src/schema.ts
 echo "import { makeExecutableSchema } from '@graphql-tools/schema';
 
 const typeDefinitions =  \`
-  type Query: any { 
+  type Query { 
     hello: string! 
   }\`
 
