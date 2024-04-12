@@ -73,6 +73,7 @@ npx tsc --init
 ```
 
 
+
 # Execució del projecte
 
 Per a executar el projecte, executarem la següent comanda:
