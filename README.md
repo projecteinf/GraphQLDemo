@@ -217,5 +217,6 @@ npm i -D --save-exact prisma @prisma/client
 ```
 
 ```bash
+cd src
 npx prisma init
 ```
