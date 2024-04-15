@@ -240,4 +240,11 @@ cd src
 npx prisma generate
 ```
 
+# Execució del codi client
+
+No és necessari que el servidor estigui en marxa per a executar el codi client.
+ 
+```bash
+npx ts-node src/script.ts
+```
 
