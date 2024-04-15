@@ -210,7 +210,9 @@ main()
 
 ```
 
-# Installing Prisma (ORM)
+# Installing and configuring Prisma (ORM)
+
+## Instal·lació de Prisma 
 
 ```bash
 npm i -D --save-exact prisma @prisma/client
@@ -223,3 +225,19 @@ rm .gitignore
 cd ..
 echo "src/.env" >> .gitignore
 ```
+
+## Creació de la base dades - Migració
+
+```bash
+cd src/
+npx prisma migrate dev
+```
+
+## Generació de les classes de Prisma
+
+```bash 
+cd src
+npx prisma generate
+```
+
+
