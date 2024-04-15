@@ -29,6 +29,13 @@ const typeDefinitions =  `
   }
 `
 
+const parseIntSafe = (value: string): number | null => {
+  if (/^(\d+)$/.test(value)) {
+    return parseInt(value, 10)
+  }
+  return null
+}
+
 const resolvers = {
   Query: {
     info: () => `This is the API of a Hackernews Clone`,
@@ -70,6 +77,12 @@ const resolvers = {
       args: { linkId: string; body: string },
       context: GraphQLContext
     ) {
+        const linkId = parseIntSafe(args.linkId)
+        if (linkId === null) {
+          return Promise.reject(
+            new GraphQLError(`Cannot post comment on non-existing link with id '${args.linkId}'.`)
+          )
+        }
         const newComment = await context.prisma.comment
         .create({
           data: {
