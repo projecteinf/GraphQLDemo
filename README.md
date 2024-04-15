@@ -210,3 +210,12 @@ main()
 
 ```
 
+# Installing Prisma (ORM)
+
+```bash
+npm i -D --save-exact prisma @prisma/client
+```
+
+```bash
+npx prisma init
+```
