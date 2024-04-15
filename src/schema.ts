@@ -42,6 +42,18 @@ const resolvers = {
     hello: () => 'Hello World!',
     info: () => `This is the API of a Hackernews Clone`,
     feed: () => links
+  },
+  Mutation: {
+    postLink: (parent: unknown, args: { description: string; url: string }) => {
+      let idCount = links.length
+      const link: Link = {
+        id: `link-${idCount}`,
+        description: args.description,
+        url: args.url
+      }
+      links.push(link)
+      return link
+    }
   }
 }
 
