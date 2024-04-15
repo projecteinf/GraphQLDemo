@@ -219,4 +219,7 @@ npm i -D --save-exact prisma @prisma/client
 ```bash
 cd src
 npx prisma init
+rm .gitignore 
+cd ..
+echo "src/.env" >> .gitignore
 ```
