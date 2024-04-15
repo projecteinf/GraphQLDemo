@@ -7,13 +7,15 @@ const typeDefinitions =  `
     hello: String
   }
   
+  type Mutation {
+    postLink(url: String!, description: String!): Link!
+  }
+
   type Link {
     id: ID!
     description: String!
     url: String!
   } 
-
-  
 `
 
 type Link = {
@@ -40,11 +42,6 @@ const resolvers = {
     hello: () => 'Hello World!',
     info: () => `This is the API of a Hackernews Clone`,
     feed: () => links
-  },
-  Link: {
-    id: (parent: Link) => parent.id,
-    description: (parent: Link) => parent.description,
-    url: (parent: Link) => parent.url
   }
 }
 
