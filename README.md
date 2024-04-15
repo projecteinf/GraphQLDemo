@@ -243,8 +243,14 @@ npx prisma generate
 # Execució del codi client
 
 No és necessari que el servidor estigui en marxa per a executar el codi client.
- 
+
 ```bash
 npx ts-node src/script.ts
+```
+# Execució de Prisma Studio (GUI bd)
+
+```bash
+cd src/prisma/
+npx prisma studio
 ```
 
