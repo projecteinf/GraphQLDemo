@@ -19,7 +19,8 @@ const typeDefinitions =  `
    
   type Query {
     info: String!
-    feed: [Link!]!
+    feeds: [Link!]!
+    feed(filterNeedle: String): [Link!]!
     comment(id: ID!): Comment
   }
    
@@ -39,7 +40,19 @@ const parseIntSafe = (value: string): number | null => {
 const resolvers = {
   Query: {
     info: () => `This is the API of a Hackernews Clone`,
-    feed: (parent: unknown, args: {}, context: GraphQLContext) => context.prisma.link.findMany(),
+    feeds: (parent: unknown, args: {}, context: GraphQLContext) => context.prisma.link.findMany(),
+    async feed(parent: unknown, args: { filterNeedle?: string }, context: GraphQLContext) {
+      const where = args.filterNeedle
+        ? {
+            OR: [
+              { description: { contains: args.filterNeedle } },
+              { url: { contains: args.filterNeedle } }
+            ]
+          }
+        : {}
+ 
+        return context.prisma.link.findMany({ where })
+    },
     async comment(parent: unknown, args: { id: string }, context: GraphQLContext) {
       return context.prisma.comment.findUnique({
         where: { id: parseInt(args.id) }
