@@ -70,6 +70,7 @@ npm init -y
 Initialize a new TypeScript configuration
 
 ```bash
+npm install typescript
 npx tsc --init
 ```
 
