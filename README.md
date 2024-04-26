@@ -65,6 +65,7 @@ Podem inicialitzar el projecte després d'instal·lar totes les dependències ne
 
 ```bash
 npm init -y
+npm i -D --save-exact typescript @types/node ts-node ts-node-dev cross-env
 ```
 
 Initialize a new TypeScript configuration
